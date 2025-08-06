@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GKS - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">GKS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produits.html">Nos Produits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="troc.html">Troc</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero text-white text-center d-flex align-items-center justify-content-center">
+        <div class="overlay"></div>
+        <div class="container z-10">
+            <h1 class="display-2 animate__animated animate__fadeInDown">Contactez-nous</h1>
+            <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Nous sommes à votre écoute pour toutes vos questions.</p>
+        </div>
+    </header>
+
+    <section class="py-5 bg-light-gray">
+        <div class="container animate__animated animate__fadeInUp">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-form-container p-4 p-md-5 rounded-4 shadow-lg bg-white h-100 d-flex flex-column justify-content-center">
+                        <h2 class="fw-bold mb-4 text-dark-gray text-center">Envoyez-nous un message</h2>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="nomContact" class="form-label">Votre nom <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="nomContact" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="emailContact" class="form-label">Votre e-mail</label>
+                                <input type="email" class="form-control" id="emailContact">
+                            </div>
+                            <div class="mb-3">
+                                <label for="messageContact" class="form-label">Votre message <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="messageContact" rows="6" required></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg mt-3">Envoyer sur WhatsApp</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-info-container p-4 p-md-5 rounded-4 shadow-lg bg-white h-100">
+                        <h2 class="fw-bold mb-4 text-dark-gray text-center">Nos informations</h2>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-geo-alt-fill fs-2 me-3 text-primary"></i>
+                            <div>
+                                <h5 class="mb-0">Adresse</h5>
+                                <p class="mb-0">Cotonou, Bénin</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-envelope-fill fs-2 me-3 text-primary"></i>
+                            <div>
+                                <h5 class="mb-0">Email</h5>
+                                <p class="mb-0"><a href="mailto:contact@gks.com" class="text-decoration-none text-dark-gray">contact@gks.com</a></p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="bi bi-whatsapp fs-2 me-3 text-primary"></i>
+                            <div>
+                                <h5 class="mb-0">WhatsApp</h5>
+                                <p class="mb-0"><a href="https://api.whatsapp.com/send?phone=2290190821260" target="_blank" class="text-decoration-none text-dark-gray">+229 01 90 82 12 60</a></p>
+                            </div>
+                        </div>
+                        <div class="mt-4 map-container rounded-3 overflow-hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.094449118436!2d2.4470449!3d6.3818094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102355003f4674f3%3A0xf5c1b6e52891ed44!2sGKS%20MOBILE%20WORLD!5e0!3m2!1sfr!2sbj!4v1754446056863!5m2!1sfr!2sbj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">GKS</h5>
+                    <p>Votre boutique de référence pour l'achat et le troc de téléphones iPhone et Samsung. Qualité, confiance et service client au cœur de notre mission.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Navigation</h5>
+                    <p><a href="index.html" class="text-white text-decoration-none">Accueil</a></p>
+                    <p><a href="produits.html" class="text-white text-decoration-none">Nos Produits</a></p>
+                    <p><a href="troc.html" class="text-white text-decoration-none">Troc</a></p>
+                    <p><a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
+                    <p><a href="a-propos.html" class="text-white text-decoration-none">À propos</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <p><i class="bi bi-envelope-fill"></i> contact@gks.com</p>
+                    <p><i class="bi bi-phone-fill"></i> +229 01 90 82 12 60</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> Cotonou, Bénin</p>
+                </div>
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Suivez-nous</h5>
+                    <a href="https://www.facebook.com/share/164zW58FKT/?mibextid=LQQJ4d" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=2290190821260" class="text-white me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                </div>
+
+            </div>
+            <hr class="my-3 text-white" />
+            <div class="row text-center">
+                <div class="col">
+                    <p class="mb-0">© 2024 GKS. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

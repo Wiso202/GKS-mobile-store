@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GKS - Proposer un troc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">GKS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produits.html">Nos Produits</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="troc.html">Troc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero text-white text-center d-flex align-items-center justify-content-center">
+        <div class="overlay"></div>
+        <div class="container z-10">
+            <h1 class="display-2 animate__animated animate__fadeInDown">Proposez un troc</h1>
+            <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Échangez votre ancien téléphone pour un modèle plus récent !</p>
+        </div>
+    </header>
+
+    <section class="py-5 bg-light-gray">
+        <div class="container animate__animated animate__fadeInUp">
+            <h2 class="text-center fw-bold mb-4 text-dark-gray">Soumettez votre proposition</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="troc-form-container p-4 p-md-5 rounded-4 shadow-lg bg-white">
+                        <form id="trocForm" class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nom" class="form-label">Votre nom <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="nom" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="contact" class="form-label">Votre numéro WhatsApp <span class="text-danger">*</span></label>
+                                <input type="tel" class="form-control" id="contact" placeholder="+229 98 00 00 00" required>
+                            </div>
+                            <hr class="my-4">
+                            <h5 class="mb-3 text-dark-gray">Détails de votre téléphone à échanger</h5>
+                            <div class="col-md-6">
+                                <label for="marqueTroc" class="form-label">Marque</label>
+                                <input type="text" class="form-control" id="marqueTroc" placeholder="Ex: iPhone, Samsung">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="modeleTroc" class="form-label">Modèle</label>
+                                <input type="text" class="form-control" id="modeleTroc" placeholder="Ex: iPhone 11, Galaxy S22">
+                            </div>
+                            <div class="col-12">
+                                <label for="descriptionTroc" class="form-label">État et caractéristiques <span class="text-danger">*</span></label>
+                                <textarea class="form-control" id="descriptionTroc" rows="4" placeholder="Ex: 'Écran un peu rayé, 128 Go de mémoire, batterie à 85%', etc." required></textarea>
+                            </div>
+                            <hr class="my-4">
+                            <h5 class="mb-3 text-dark-gray">Téléphone souhaité</h5>
+                            <div class="col-12">
+                                <label for="modeleSouhaite" class="form-label">Modèle ou type de téléphone que vous souhaitez</label>
+                                <input type="text" class="form-control" id="modeleSouhaite" placeholder="Ex: iPhone 14 Pro, Samsung Galaxy S23">
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg mt-3 w-75">Soumettre la proposition</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">GKS</h5>
+                    <p>Votre boutique de référence pour l'achat et le troc de téléphones iPhone et Samsung. Qualité, confiance et service client au cœur de notre mission.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Navigation</h5>
+                    <p><a href="index.html" class="text-white text-decoration-none">Accueil</a></p>
+                    <p><a href="produits.html" class="text-white text-decoration-none">Nos Produits</a></p>
+                    <p><a href="troc.html" class="text-white text-decoration-none">Troc</a></p>
+                    <p><a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
+                    <p><a href="a-propos.html" class="text-white text-decoration-none">À propos</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <p><i class="bi bi-envelope-fill"></i> contact@gks.com</p>
+                    <p><i class="bi bi-phone-fill"></i> +229 01 90 82 12 60</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> Cotonou, Bénin</p>
+                </div>
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Suivez-nous</h5>
+                    <a href="https://www.facebook.com/share/164zW58FKT/?mibextid=LQQJ4d" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=2290190821260" class="text-white me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                </div>
+
+            </div>
+            <hr class="my-3 text-white" />
+            <div class="row text-center">
+                <div class="col">
+                    <p class="mb-0">© 2024 GKS. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/troc.js"></script>
+</body>
+</html>

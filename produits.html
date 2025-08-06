@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GKS - Nos Produits</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">GKS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="produits.html">Nos Produits</a></li>
+                    <li class="nav-item"><a class="nav-link" href="troc.html">Troc</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="a-propos.html">À propos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero text-white text-center d-flex align-items-center justify-content-center">
+        <div class="overlay"></div>
+        <div class="container z-10">
+            <h1 class="display-2 animate__animated animate__fadeInDown">Découvrez tous nos produits</h1>
+            <p class="lead animate__animated animate__fadeInUp animate__delay-1s">Trouvez l'iPhone ou le Samsung de vos rêves parmi notre sélection.</p>
+        </div>
+    </header>
+
+    <section class="py-5 bg-light-gray">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-4 animate__animated animate__fadeIn">Filtres et recherche</h2>
+            <div class="d-flex justify-content-center flex-wrap gap-2 mb-4 animate__animated animate__fadeInUp">
+                <button class="btn btn-filter active" data-filter="all">Tous les produits</button>
+                <button class="btn btn-filter" data-filter="iPhone">iPhone</button>
+                <button class="btn btn-filter" data-filter="Samsung">Samsung</button>
+            </div>
+            <div class="input-group mb-5 animate__animated animate__fadeInUp animate__delay-1s">
+                <span class="input-group-text"><i class="bi bi-search"></i></span>
+                <input type="text" class="form-control" id="searchInput" placeholder="Rechercher par modèle, marque, couleur...">
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="liste-produits">
+                </div>
+
+            <nav aria-label="Pagination des produits">
+                <ul class="pagination justify-content-center mt-5" id="pagination-container">
+                    </ul>
+            </nav>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">GKS</h5>
+                    <p>Votre boutique de référence pour l'achat et le troc de téléphones iPhone et Samsung. Qualité, confiance et service client au cœur de notre mission.</p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Navigation</h5>
+                    <p><a href="index.html" class="text-white text-decoration-none">Accueil</a></p>
+                    <p><a href="produits.html" class="text-white text-decoration-none">Nos Produits</a></p>
+                    <p><a href="troc.html" class="text-white text-decoration-none">Troc</a></p>
+                    <p><a href="contact.html" class="text-white text-decoration-none">Contact</a></p>
+                    <p><a href="a-propos.html" class="text-white text-decoration-none">À propos</a></p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                    <p><i class="bi bi-envelope-fill"></i> contact@gks.com</p>
+                    <p><i class="bi bi-phone-fill"></i> +229 01 90 82 12 60</p>
+                    <p><i class="bi bi-geo-alt-fill"></i> Cotonou, Bénin</p>
+                </div>
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Suivez-nous</h5>
+                    <a href="https://www.facebook.com/share/164zW58FKT/?mibextid=LQQJ4d" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=2290190821260" class="text-white me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin fs-4"></i></a>
+                </div>
+
+            </div>
+            <hr class="my-3 text-white" />
+            <div class="row text-center">
+                <div class="col">
+                    <p class="mb-0">© 2024 GKS. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="detailsModalLabel">Détails du produit</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/produits.js"></script>
+</body>
+</html>
